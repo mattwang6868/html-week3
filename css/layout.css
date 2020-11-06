@@ -247,6 +247,7 @@ table {
 }
 
 .footer .container .tel-email a img {
+  width: 40px;
   margin-right: 17px;
   vertical-align: middle;
 }
