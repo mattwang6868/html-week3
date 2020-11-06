@@ -1,0 +1,283 @@
+.content{
+    .catogary{
+        ul{
+            max-width: 1386px;
+            box-sizing: border-box;
+            margin: 0 auto;
+            display: flex;
+            li{ 
+                width: 100%;
+                height: 103px;
+                box-sizing: border-box;
+                border:1px solid #DCDCDC;
+                padding: 24px 0;
+                text-align: center;
+                font-weight: bolder;
+                @media(max-width:992px){
+                    padding: 16px 0;
+                    height: 69px;
+                }
+                @media(max-width:767px){
+                    padding: 8px 0;
+                    height: 35px;
+                }
+                a{ 
+                    text-decoration: none;
+                    color: #000;
+                    font-size: 42px;
+                    line-height: 63px;
+                    @media(max-width:992px){
+                        font-size: 28px;
+                        line-height: 42px;
+                    }
+                    @media(max-width:767px){
+                        font-size: 14px;
+                        line-height: 19px;
+                    }
+                }
+            }
+            li:hover{
+                border-bottom: 16px solid #AA0601;
+                transition: all 0.5s;
+                @media(max-width:992px){
+                    border-bottom: 8px solid #AA0601;
+                }
+                @media(max-width:767px){
+                    border-bottom: 4px solid #AA0601;
+                }
+            }
+            .diamond{
+                img{
+                    vertical-align: text-top;
+                    margin-right: 8px;
+                    @media(max-width:992px){
+                        width: 32px;
+                    }
+                    @media(max-width:767px){
+                        width: 15px;
+                    }
+                }
+            }
+            .sun{
+                img{
+                    vertical-align: text-top;
+                    margin-right: 5px;
+                    width: 45px;
+                    @media(max-width:992px){
+                        width: 32px;
+                    }
+                    @media(max-width:767px){
+                        width: 14px;
+                    }
+                }
+            }
+            .thunder{
+                img{
+                    vertical-align: sub;
+                    margin-right: 8px;
+                    @media(max-width:992px){
+                        width: 23px;
+                    }
+                    @media(max-width:767px){
+                        width: 10px;
+                    }
+                }
+            }
+        }
+    }
+    .banner{
+        display: flex;
+        .mr15{
+            background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/banner-3.png?raw=true");
+            margin-right: 15px;
+            height: 309px;
+            width: 945px;
+            background-position: center;
+            @media(max-width:992px){
+                margin: 0;
+            }
+            @media(max-width:767px){
+                height: 144px;
+            }
+        }
+        .ml15{
+            background-image: url("https://github.com/hexschool/webLayoutTraining1st/blob/master/week3/product-2-color.png?raw=true");
+            margin-right: 15px;
+            height: 309px;
+            width: 945px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            @media(max-width:992px){
+                margin: 0;
+            }
+            @media(max-width:767px){
+                height: 144px;
+            }
+        }
+    }
+    .products{
+        text-align: center;
+        padding: 88px 0 156px 0;
+        
+        @media(max-width:992px){
+            padding: 40px 0 104px 0;
+        }
+        @media(max-width:767px){
+            padding: 30px 0 56px 0;
+        }
+        h1{
+            font-weight: bolder;
+            font-size: 42px;
+            line-height: 63px;
+            @media(max-width:767px){
+                font-size: 20px;
+                line-height: 26px;
+            }
+        }
+        h2{
+            font-weight: bolder;
+            font-size: 32px;
+            line-height: 48px;
+            margin-bottom: 32px;
+            @media(max-width:767px){
+                font-size: 16px;
+                line-height: 22px;
+                margin-bottom: 20px;
+            }
+        }
+        .products-list{
+            max-width: 1110px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            @media(max-width:992px){
+                max-width: 690px;
+            }
+            @media(max-width:767px){
+                max-width: 345px;
+                padding: 0 15px;
+            }
+            .d-none{
+                display: none;
+                @media(max-width:992px){
+                    display: inline-block;
+                }
+            }
+            .d-phone-none{
+                @media(max-width:767px){
+                    display: none;
+                }
+            }
+            .card{
+                max-width: 31.33%;
+                margin: 0 1% 104px 1%;
+                @media(max-width:992px){
+                    max-width:46%;
+                    margin: 0 2% 104px 2%;
+                }
+                @media(max-width:767px){
+                    max-width:100%;
+                    margin: 0 0 32px 0;
+                }
+                img{
+                    width:100%;
+                    height: 224px;
+                    object-fit: cover;
+                    @media(max-width:992px){
+                        display: none;
+                    }
+                }
+                .d-pad{
+                    max-width:330px;
+                    height: 164px;
+                    display: none;
+                    @media(max-width:992px){
+                        display:inline-block;
+                    }
+                    @media(max-width:767px){
+                        max-width:345px;
+                    }
+                }
+                .d-pad.d-phone-none{
+                    max-width:330px;
+                    height: 164px;
+                    display: none;
+                    @media(max-width:992px){
+                        display:inline-block;
+                    }
+                    @media(max-width:767px){
+                        display: none;
+                    }
+                }
+                .d-phone{
+                    @media(max-width:767px){
+                        display:inline-block;
+                        max-width:345px;
+                    }
+                }
+                .card-text{
+                    display: flex;
+                    justify-content: space-between;
+                    font-size: 24px;
+                    line-height: 36px;
+                    font-weight: bolder;
+                    .price{
+                        color:#AA0601;
+                    }
+                }
+                .color-list{
+                    display: flex;
+                    .color-box1{
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 4px;
+                        background-color: #5F3E2D;
+                        margin-right: 8px;
+                    }
+                    .color-box2{
+                        width: 24px;
+                        height: 24px;
+                        border-radius: 4px;
+                        background-color:#B75929;
+                    }
+                }
+            }
+        }
+        .pagination{
+            ul{
+                display: flex;
+                justify-content: center;
+                li{
+                    border:1px solid #555555;
+                    padding: 10px 15px;
+                    @media(max-width:767px){
+                        padding: 8px 8px;
+                    }
+                    a{
+                        text-decoration: none;
+                        color:#555555;
+                        @media(max-width:767px){
+                            font-size: 12px;
+                            line-height: 18px;
+                        }
+                    }
+                }
+                .active{
+                    background-color: #000000;
+                    a{
+                       color:#fff; 
+                    }
+                }
+                .disabled{
+                    pointer-events: none;
+                }
+                .bg-gray{
+                    background: #F2F2F2;
+                }
+            }
+        }
+    }
+}
